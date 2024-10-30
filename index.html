@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Agrario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom class -->
+    <script>
+        tailwind.config = {
+            theme: {
+                container : {
+                    center: true,
+                },
+                extend: {
+                    colors: {
+                        black: {
+                            1: '#1F1F1F',
+                            2:"#545454"
+                        },
+                        gray:{
+                            1:'#E5EDF0',
+                            2: "#EAF5F5"
+                        },
+                        green:{
+                            1:"#206F6A",
+                            2:"#2179A1"
+                        }
+                    },
+                    boxShadow: {
+                        userboxshadow: '2px 3px 30px 0px #BACCD429',
+                    },
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                        opensans: ["Open Sans", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header start here  -->
+    <header class="container px-5 xl:px-0 font-poppins">
+        <div class="flex items-center justify-between py-[22px] border-b border-b-gray-1">
+            <div>
+                <img src="./img/logo.png" class="w-56" alt="Logo">
+            </div>
+            <div class="w-56 flex items-center gap-3.5 shadow-userboxshadow rounded-[60px] p-[6px]">
+                <div><img src="./img/user.png" alt="User"></div>
+                <div class="flex items-center gap-2">
+                    <h3 class="font-semibold text-black-1 text-xl">John Doe</h3>
+                    <img src="./img/dropdown.svg" alt="Dropdown">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+     <main class="font-poppins">
+        <!-- Examination start here -->
+        <section class="py-[50px] container px-5 xl:px-0">
+            <div class="bg-gray-2 rounded-[40px]">
+                <h1 class="text-center font-bold text-[40px] max-w-6xl mx-auto py-[70px]">Examination analysis of your property for wind, solar and energy storage In 2 minutes to the result</h1>
+            </div>
+        </section>
+        <!-- step start here  -->
+         <section class="py-[50px] max-w-[1051px] mx-auto px-5 lg:px-0">
+            <div class="flex items-center justify-between relative">
+                <div class="flex-1 relative">
+                    <div class="border border-[#C7E1E0] rounded-[50%] p-2 w-[84px] h-[84px] mx-auto">
+                        <span class="bg-green-1 rounded-[50%] w-full h-full flex items-center justify-center">
+                            <img src="./img/checkmark.svg" alt="checkmark">
+                        </span>
+            
+                    </div>
+                    <div
+                        class="md:w-[56%] md:left-[72%] lg:w-[176.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[167.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-1 bg-white">
+                        <span class="block h-1 bg-[#D1E7E7]"></span>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <div class="border border-[#C7E1E0]  rounded-[50%] p-2 w-[84px] h-[84px] mx-auto">
+                        <span
+                            class="border border-green-1 bg-white rounded-[50%] w-full h-full flex items-center justify-center text-[26px] text-green-1 font-semibold">2</span>
+                    </div>
+                    <div
+                        class="md:w-[56%] md:left-[72%] lg:w-[176.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[168.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-1 bg-white">
+                        <span class="block h-1 bg-[#D1E7E7]"></span>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <div class="border border-[#C7E1E0]  rounded-[50%] p-2 w-[84px] h-[84px] mx-auto">
+                        <span
+                            class="border border-green-1 bg-white rounded-[50%] w-full h-full flex items-center justify-center text-[26px] text-green-1 font-semibold">3</span>
+                    </div>
+                    <div
+                        class="md:w-[56%] md:left-[72%] lg:w-[176.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[167.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-1 bg-white">
+                        <span class="block h-1 bg-[#D1E7E7]"></span>
+                    </div>
+                </div>
+                <div class="flex-1 relative self-end">
+                    <div class="border border-[#C7E1E0]  rounded-[50%] p-2 w-[84px] h-[84px] mx-auto">
+                        <span
+                            class="border border-green-1 bg-white rounded-[50%] w-full h-full flex items-center justify-center text-[26px] text-green-1 font-semibold">4</span>
+                    </div>
+                </div>
+                
+                <span
+                    class="block bg-[#D1E7E7] w-[76%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-1"></span>
+            </div>
+           
+         </section>
+         <!-- map  -->
+          <section class="py-[50px] max-w-[1051px] mx-auto px-5 lg:px-0">
+            <h2 class="text-2xl text-black-1 font-semibold text-center">In which federal state is the property located</h2>
+            <div class="max-w-[1051px] border border-[max-w-[1051px]] rounded-[30px] flex items-center justify-center py-[53px] mt-[60px] mb-[100px]">
+                <img src="./img/map.png" class="max-w-[457px]" alt="Map">
+            </div>
+           
+
+          </section>
+          <!-- cta & btn  -->
+            <section class="py-[50px] max-w-[682px] mx-auto px-5 sm:px-0">
+                <div class="text-center">
+                    <a href="#"
+                        class="text-white text-3xl font-semibold px-[130px] py-[28px] bg-green-2 hover:bg-black-1 rounded-[20px] inline-block">Next</a>
+                </div>
+                <div class="bg-gray-2 rounded-[30px] py-[60px] text-center mt-[90px] mb-[150px]">
+                    <h3 class="text-[40px] font-bold text-green-1">9.300+</h3>
+                    <p class="text-lg font-normal text-black-2 capitalize pt-3.5">areas examined</p>
+                </div>
+            </section>
+
+     </main>
+
+    <!-- footer start here  -->
+    <footer class="bg-green-1 rounded-t-[30px] font-opensans text-white">
+        <div class="container px-5 xl:px-0">
+            <div class="py-10 lg:py-[111px] flex justify-between flex-col lg:flex-row gap-8 border-b border-b-[#2C857F]">
+                <div class="w-full lg:w-1/2">
+                    <img src="./img/footerLogo.png" class="w-[300px]" alt="Footer-Logo">
+                </div>
+                <div
+                    class="w-full lg:w-1/2 flex justify-between flex-col lg:flex-row gap-3 text-lg xl:text-[22px] font-semibold">
+                    <div class="w-full lg:w-[195px] xl:w-[234px]">
+                        <ul class="space-y-3 lg:space-y-[70px] ">
+                            <li><a href="#" class="hover:text-black-1">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-black-1">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-[212px] xl:w-[300px]">
+                        <ul class="space-y-3 lg:space-y-[70px] ">
+                            <li><a href="maito:info@agrarioenergy.com" class="flex items-center gap-2 xl:gap-3">
+                                    <span><img src="./img/email.svg" class="w-6" alt="email"></span>
+                                    <span>info@agrarioenergy.com</span>
+                                </a></li>
+                            <li><a href="tel:+49 (0) 157 58516778" class="flex items-center gap-2 xl:gap-3">
+                                    <span><img src="./img/call.svg" class="w-6" alt="Phone"></span>
+                                    <span>+49 (0) 157 58516778</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 lg:py-[30px] flex justify-between flex-col-reverse lg:flex-row gap-5">
+                <div class="flex-1">
+                    <p class="text-base lg:text-xl font-light">© 2024 Agrario Energy. All rights reserved.</p>
+                </div>
+                <div class="flex-1">
+                    <ul class="flex items-center justify-start lg:justify-end gap-[10px]">
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/instagram.svg" class="w-5" alt="Instragram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/twitter.svg" class="w-5" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/linkedin.svg" class="w-5" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/facebook.svg" class="w-5" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
