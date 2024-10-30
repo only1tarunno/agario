@@ -14,6 +14,7 @@ export default {
        gray: {
           1:'#E5EDF0',
           2: "#EAF5F5",
+          3:'#363636'
         },
          green:{
           1:"#206F6A",
