@@ -277,18 +277,301 @@
         <!-- faq  -->
         <section class="container px-5 xl:px-0 mt-10 lg:mt-[150px]">
             <div
-                class="bg-[#F4F8FA] p-5 lg:p-9 xl:p-[60px] rounded-[30px]">
-                
+                class="bg-[#F4F8FA] p-5 lg:p-9 xl:p-[60px] rounded-[30px] space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-[#D9EBF3] rounded-[30px] overflow-hidden border border-[#E7F2F8]">
+                    <button class="flex items-center justify-between w-full gap-[15px]" onclick="toggleAccordion(1)">
+                        <!-- Question -->
+                        <span class="flex items-center gap-5 xl:gap-[30px] p-5 xl:p-8 max-w-[75%] xl:max-w-[80%]">
+                            <span class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                                <img src="./img/nature.svg" class="w-14" alt="Location">
+                            </span>
+                            <span class="block flex-1 text-start space-y-2 lg:space-y-4">
+                                <span class="block text-gray-3 font-semibold text-base lg:text-2xl capitalize">Area details and
+                                    location</span>
+                                <span class="block font-opensans text-sm lg:text-lg text-black-2">The site is potentially well suited
+                                    for technology due to its location and size of area.</span>
+                            </span>
+                        </span>
+                        <span id="more-details-1"
+                            class="capitalize font-semibold text-base lg:text-lg text-green-2 inline-block me-5 lg:me-10 px-4 lg:px-6 py-2 lg:py-3 rounded-2xl bg-[#E9F8FF] border border-green-2">More
+                            details</span>
+                    </button>
+                    <!-- Answer -->
+                    <div id="content-1"
+                        class="accordion-content overflow-hidden text-[13px] lg:text-lg transition-all duration-300 max-h-0 bg-white">
+                        <div class="max-w-[1015px] lg:mx-auto  p-5 lg:pt-[28px] lg:pb-10 text-[17px] font-opensans text-black-2 capitalize space-y-5 lg:space-y-8">
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>radius of residential area</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">500</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>radius of residential area</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">800</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>radius of residential area</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">1000</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Distance of rotating beacon</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">400</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Distance of airport</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">700</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Energy delay</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">300</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Average wind speed</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">150</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Average wind speed</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">200</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Average wind power density</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">150</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Average wind power density</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">200</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-[#D9EBF3] rounded-[30px] overflow-hidden border border-[#E7F2F8]">
+                    <button class="flex items-center justify-between w-full gap-[15px]" onclick="toggleAccordion(2)">
+                        <!-- Question -->
+                        <span class="flex items-center gap-5 xl:gap-[30px] p-5 xl:p-8 max-w-[75%] xl:max-w-[80%]">
+                            <span class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                                <img src="./img/solar-panel.svg" class="w-14" alt="Location">
+                            </span>
+                            <span class="block flex-1 text-start space-y-2 lg:space-y-4">
+                                <span class="block text-gray-3 font-semibold text-base lg:text-2xl capitalize">open space solar energy</span>
+                                <span class="block font-opensans text-sm lg:text-lg text-black-2">The site is potentially well suited for open space solar energy due to the high solar radiation of solar radiation and
+                                the planning conditions.</span>
+                            </span>
+                        </span>
+                        <span id="more-details-2"
+                            class="capitalize font-semibold text-base lg:text-lg text-green-2 inline-block me-5 lg:me-10 px-4 lg:px-6 py-2 lg:py-3 rounded-2xl bg-[#E9F8FF] border border-green-2">More
+                            details</span>
+                    </button>
+                    <!-- Answer -->
+                    <div id="content-2"
+                        class="accordion-content overflow-hidden text-[13px] lg:text-lg text-[#202224] transition-all duration-300 max-h-0 bg-white">
+                        <div class="max-w-[1015px] lg:mx-auto grid grid-cols-3 p-5 lg:pt-[28px] lg:pb-10">
+                            <p>Information goes here...</p>
+                            <p>Additional details...</p>
+                            <p>More text...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-[#D9EBF3] rounded-[30px] overflow-hidden border border-[#E7F2F8]">
+                    <button class="flex items-center justify-between w-full gap-[15px]" onclick="toggleAccordion(3)">
+                        <!-- Question -->
+                        <span class="flex items-center gap-5 xl:gap-[30px] p-5 xl:p-8 max-w-[75%] xl:max-w-[80%]">
+                            <span class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                                <img src="./img/financialbenefits.svg" class="w-14" alt="Location">
+                            </span>
+                            <span class="block flex-1 text-start space-y-2 lg:space-y-4">
+                                <span class="block text-gray-3 font-semibold text-base lg:text-2xl capitalize">Financial benefits</span>
+                                <span class="block font-opensans text-sm lg:text-lg text-black-2">By leasing your property, you can expect attractive annual rents of up to rent. Over a 25 year contract period, you will
+                                earn total rent For wind energy per plant.</span>
+                            </span>
+                        </span>
+                        <span id="more-details-3"
+                            class="capitalize font-semibold text-base lg:text-lg text-green-2 inline-block me-5 lg:me-10 px-4 lg:px-6 py-2 lg:py-3 rounded-2xl bg-[#E9F8FF] border border-green-2">More
+                            details</span>
+                    </button>
+                    <!-- Answer -->
+                    <div id="content-3"
+                        class="accordion-content overflow-hidden text-[13px] lg:text-lg text-[#202224] transition-all duration-300 max-h-0 bg-white">
+                        <div class="max-w-[1015px] lg:mx-auto grid grid-cols-3 p-5 lg:pt-[28px] lg:pb-10">
+                            <p>Information goes here...</p>
+                            <p>Additional details...</p>
+                            <p>More text...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-[#D9EBF3] rounded-[30px] overflow-hidden border border-[#E7F2F8]">
+                    <button class="flex items-center justify-between w-full gap-[15px]" onclick="toggleAccordion(4)">
+                        <!-- Question -->
+                        <span class="flex items-center gap-5 xl:gap-[30px] p-5 xl:p-8 max-w-[75%] xl:max-w-[80%]">
+                            <span class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                                <img src="./img/soil.png" class="w-14" alt="Location">
+                            </span>
+                            <span class="block flex-1 text-start space-y-2 lg:space-y-4">
+                                <span class="block text-gray-3 font-semibold text-base lg:text-2xl capitalize">soil quality and topography</span>
+                                <span class="block font-opensans text-sm lg:text-lg text-black-2">The property is mostly flat and does not have above-average arable soil properties.</span>
+                            </span>
+                        </span>
+                        <span id="more-details-4"
+                            class="capitalize font-semibold text-base lg:text-lg text-green-2 inline-block me-5 lg:me-10 px-4 lg:px-6 py-2 lg:py-3 rounded-2xl bg-[#E9F8FF] border border-green-2">More
+                            details</span>
+                    </button>
+                    <!-- Answer -->
+                    <div id="content-4"
+                        class="accordion-content overflow-hidden text-[13px] lg:text-lg text-[#202224] transition-all duration-300 max-h-0 bg-white">
+                        <div
+                            class="max-w-[1015px] lg:mx-auto  p-5 lg:pt-[28px] lg:pb-10 text-[17px] font-opensans text-black-2 capitalize space-y-5 lg:space-y-8">
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>radius of residential area</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">500</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>radius of residential area</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">800</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>radius of residential area</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">1000</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Distance of rotating beacon</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">400</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Distance of airport</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">700</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Energy delay</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">300</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Average wind speed</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">150</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Average wind speed</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">200</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Average wind power density</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">150</p>
+                            </div>
+                            <!-- single row -->
+                            <div class="grid grid-cols-3 overflow-x-auto">
+                                <p>Average wind power density</p>
+                                <p class="text-end">meter</p>
+                                <p class="text-end">200</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="bg-[#D9EBF3] rounded-[30px] overflow-hidden border border-[#E7F2F8]">
+                    <button class="flex items-center justify-between w-full gap-[15px]" onclick="toggleAccordion(5)">
+                        <!-- Question -->
+                        <span class="flex items-center gap-5 xl:gap-[30px] p-5 xl:p-8 max-w-[75%] xl:max-w-[80%]">
+                            <span class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                                <img src="./img/infrastructure.svg" class="w-14" alt="Location">
+                            </span>
+                            <span class="block flex-1 text-start space-y-2 lg:space-y-4">
+                                <span class="block text-gray-3 font-semibold text-base lg:text-2xl capitalize">power grid & infrastructure</span>
+                                <span class="block font-opensans text-sm lg:text-lg text-black-2">The electricity generated on the property can be fed into the nearby power grid. The proximity to the public road
+                                network facilitates the logistical implementation of the technology plant</span>
+                            </span>
+                        </span>
+                        <span id="more-details-5"
+                            class="capitalize font-semibold text-base lg:text-lg text-green-2 inline-block me-5 lg:me-10 px-4 lg:px-6 py-2 lg:py-3 rounded-2xl bg-[#E9F8FF] border border-green-2">More
+                            details</span>
+                    </button>
+                    <!-- Answer -->
+                    <div id="content-5"
+                        class="accordion-content overflow-hidden text-[13px] lg:text-lg text-[#202224] transition-all duration-300 max-h-0 bg-white">
+                        <div class="max-w-[1015px] lg:mx-auto grid grid-cols-3 p-5 lg:pt-[28px] lg:pb-10">
+                            <p>Information goes here...</p>
+                            <p>Additional details...</p>
+                            <p>More text...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="bg-[#D9EBF3] rounded-[30px] overflow-hidden border border-[#E7F2F8]">
+                    <button class="flex items-center justify-between w-full gap-[15px]" onclick="toggleAccordion(6)">
+                        <!-- Question -->
+                        <span class="flex items-center gap-5 xl:gap-[30px] p-5 xl:p-8 max-w-[75%] xl:max-w-[80%]">
+                            <span class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                                <img src="./img/planing.svg" class="w-14" alt="Location">
+                            </span>
+                            <span class="block flex-1 text-start space-y-2 lg:space-y-4">
+                                <span class="block text-gray-3 font-semibold text-base lg:text-2xl capitalize">Planning Law & Protected Areas</span>
+                                <span class="block font-opensans text-sm lg:text-lg text-black-2">According to the analysis, the property is not located in a nature and environmental protection area e.g. water
+                                protection area, Natura2000, nature reserve which excludes the implementation of solar energy.</span>
+                            </span>
+                        </span>
+                        <span id="more-details-6"
+                            class="capitalize font-semibold text-base lg:text-lg text-green-2 inline-block me-5 lg:me-10 px-4 lg:px-6 py-2 lg:py-3 rounded-2xl bg-[#E9F8FF] border border-green-2">More
+                            details</span>
+                    </button>
+                    <!-- Answer -->
+                    <div id="content-6"
+                        class="accordion-content overflow-hidden text-[13px] lg:text-lg text-[#202224] transition-all duration-300 max-h-0 bg-white">
+                        <div class="max-w-[1015px] lg:mx-auto grid grid-cols-3 p-5 lg:pt-[28px] lg:pb-10">
+                            <p>Information goes here...</p>
+                            <p>Additional details...</p>
+                            <p>More text...</p>
+                        </div>
+                    </div>
+                </div>
+               
 
             </div>
         </section>
         <section class="container px-5 xl:px-0 my-10 lg:my-20">
             <div class="bg-[#EAF5F5] rounded-[30px] mt-[70px]">
                 <p
-                    class="text-center font-semibold text-[22px] max-w-[990px] mx-auto py-[43px] capitalize text-black-2">
-                    Your property in municipality is ideal for ecological improvement measures. Take advantage of your
-                    opportunity to earn
-                    money and help federal state and Germany to promote biodiversity and nature conservation.
+                    class="text-center font-semibold text-[22px] p-10 xl:p-[73px] capitalize text-black-2">
+                    Your property in municipality is ideal for open space solar energy. Take advantage of your opportunity to earn money and
+                    help federal state and Germany become more independent from foreign energy imports. Let us present you with the best 3
+                    offers from our company network now, free of charge, without obligation and without any effort.
                 </p>
             </div>
         </section>
@@ -372,6 +655,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="./js/accordion.js"></script>
 
 </body>
 
