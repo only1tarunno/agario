@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Agrario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom class -->
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                },
+                extend: {
+                    colors: {
+                        black: {
+                            1: '#1F1F1F',
+                            2: "#545454"
+                        },
+                        gray: {
+                            1: '#E5EDF0',
+                            2: "#EAF5F5",
+                            3: '#363636'
+                        },
+                        green: {
+                            1: "#206F6A",
+                            2: "#2179A1"
+                        }
+                    },
+                    boxShadow: {
+                        userboxshadow: '2px 3px 30px 0px #BACCD429',
+                    },
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                        opensans: ["Open Sans", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header start here  -->
+    <header class="container px-5 xl:px-0 font-poppins">
+        <div class="flex items-center justify-between py-[22px] border-b border-b-gray-1">
+            <div>
+                <img src="./img/logo.png" class="w-56" alt="Logo">
+            </div>
+            <div class="w-56 flex items-center gap-3.5 shadow-userboxshadow rounded-[60px] p-[6px]">
+                <div><img src="./img/user.png" alt="User"></div>
+                <div class="flex items-center gap-2">
+                    <h3 class="font-semibold text-black-1 text-xl">John Doe</h3>
+                    <img src="./img/dropdown.svg" alt="Dropdown">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="font-poppins">
+        <!-- Examination start here -->
+        <section class="pt-[50px] container px-5 xl:px-0">
+            <div class="bg-gray-2 rounded-[40px]">
+                <h1 class="text-center font-bold text-[40px] max-w-6xl mx-auto py-[70px] capitalize">result of the analysis</h1>
+            </div>
+        </section>
+        <!-- Congratulations start here -->
+        <section class="py-[80px] container px-5 xl:px-0">
+            <p class="text-center font-semibold text-[22px] capitalize">Congratulations Your property is potentially
+                suitable for Ecological improvement measures</p>
+        </section>
+       <!-- icon box  -->
+        <section class="pb-[100px] container px-5 xl:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-[30px]">
+            <div class="border border-[#D8E5EB] rounded-[30px] p-[10px] flex items-center gap-6">
+                <div class="w-[100px] h-[100px] bg-[#F4F8FA] rounded-[26px] flex items-center justify-center">
+                    <img src="./img/windenergy.svg" class="w-[50px]" alt="wind energy">
+                </div>
+                <div>
+                    <h3 class="capitalize font-opensans font-semibold text-xl text-gray-3">wind energy</h3>
+                </div>
+            </div>
+            <div class="border border-[#D8E5EB] rounded-[30px] p-[10px] flex items-center gap-6">
+                <div class="w-[100px] h-[100px] bg-[#F4F8FA] rounded-[26px] flex items-center justify-center">
+                    <img src="./img/solar-panel.svg" class="w-[50px]" alt="Solar panel">
+                </div>
+                <div>
+                    <h3 class="capitalize font-opensans font-semibold text-xl text-gray-3">Solar panel</h3>
+                </div>
+            </div>
+            <div class="border border-[#D8E5EB] rounded-[30px] p-[10px] flex items-center gap-6">
+                <div class="w-[100px] h-[100px] bg-[#F4F8FA] rounded-[26px] flex items-center justify-center">
+                    <img src="./img/lighting.svg" class="w-[50px]" alt="Lighting">
+                </div>
+                <div>
+                    <h3 class="capitalize font-opensans font-semibold text-xl text-gray-3">Lighting</h3>
+                </div>
+            </div>
+        <div class="relative">
+           <div class="relative overflow-hidden">
+            <div class="border border-[#D8E5EB] rounded-[30px] p-[10px] flex items-center gap-6  ">
+                <div class="w-[100px] h-[100px] bg-[#F4F8FA] rounded-[26px] flex items-center justify-center">
+                    <img src="./img/bee.svg" class="w-[50px]" alt="Bee">
+                </div>
+                <div>
+                    <h3 class="capitalize font-opensans font-semibold text-xl text-gray-3">Bee</h3>
+                </div>
+                
+            </div>
+            <div class="absolute -top-4 -right-3 w-[38px] h-[38px] border border-[#D8E5EB] rounded-[50%] bg-white z-10">
+            </div>
+           </div>
+            <div class="absolute -top-3.5 -right-2.5 border border-[#D8E5EB] rounded-[50%] bg-white z-50">
+                <img src="./img/checkwhite.png" class="w-[30px]" alt="Check">
+            </div>
+        </div>
+           
+           
+        </section>
+        <!-- img box  -->
+        <section class=" max-w-[1108px] mx-auto px-5 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-[38px]">
+            <img src="./img/analysismap1.png" class="w-full" alt="Google Map">
+            <img src="./img/analysismap2.png" class="w-full" alt="Google Map">
+            <img src="./img/solar.png" class="w-full" alt="Solar">
+        </section>
+        <!-- summary box  -->
+        <section class="py-[150px] container px-5 xl:px-0">
+            <div class="shadow-userboxshadow border border-[#E7F2F8] rounded-[30px] p-5 xl:p-10">
+                <!-- table box  -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 border border-[#C1D7E1] rounded-[20px]">
+                    <div>
+                        <p
+                            class="text-gray-3 font-opensans text-lg font-normal ps-5 xl:ps-10 py-[29px] border-r border-[#C1D7E1]">
+                            Federal State
+                        </p>
+                        <h3
+                            class="text-gray-3 font-opensans text-xl font-semibold ps-5 xl:ps-10 py-[29px] border-t border-r border-[#C1D7E1]">
+                            NRW</h3>
+                    </div>
+                    <div>
+                        <p
+                            class="text-gray-3 font-opensans text-lg font-normal ps-5 xl:ps-10 py-[29px] border-r border-[#C1D7E1]">
+                            Community</p>
+                        <h3
+                            class="text-gray-3 font-opensans text-xl font-semibold ps-5 xl:ps-10 py-[29px] border-t border-r border-[#C1D7E1]">
+                            Wusthausen</h3>
+                    </div>
+                    <div>
+                        <p
+                            class="text-gray-3 font-opensans text-lg font-normal ps-5 xl:ps-10 py-[29px] lg:border-r border-[#C1D7E1]">
+                            District
+                        </p>
+                        <h3
+                            class="text-gray-3 font-opensans text-xl font-semibold ps-5 xl:ps-10 py-[29px] border-t lg:border-r border-[#C1D7E1]">
+                            Wusthausen</h3>
+                    </div>
+                    <div>
+                        <p
+                            class="text-gray-3 font-opensans text-lg font-normal ps-5 xl:ps-10 py-[29px] border-t lg:border-t-0 border-r border-[#C1D7E1]">
+                            Hallway</p>
+                        <h3
+                            class="text-gray-3 font-opensans text-xl font-semibold ps-5 xl:ps-10 py-[29px] border-t border-r border-[#C1D7E1]">
+                            2
+                        </h3>
+                    </div>
+                    <div>
+                        <p
+                            class="text-gray-3 font-opensans text-lg font-normal ps-5 xl:ps-10 py-[29px] border-t lg:border-t-0 border-r border-[#C1D7E1]">
+                            Parcel Of Land</p>
+                        <h3
+                            class="text-gray-3 font-opensans text-xl font-semibold ps-5 xl:ps-10 py-[29px] border-t border-r border-[#C1D7E1]">
+                            36/5</h3>
+                    </div>
+                    <div>
+                        <p
+                            class="text-gray-3 font-opensans text-lg font-normal ps-5 xl:ps-10 py-[29px] border-t lg:border-t-0 border-[#C1D7E1]">
+                            Size</p>
+                        <h3
+                            class="text-gray-3 font-opensans text-xl font-semibold ps-5 xl:ps-10 py-[29px] border-t  border-[#C1D7E1]">
+                            15.231m2
+                        </h3>
+                    </div>
+                </div>
+                <!-- bar  -->
+                <div class="bg-green-2 rounded-[30px] mt-[70px]">
+                    <p class="text-center font-semibold text-[22px] max-w-[1206px] mx-auto py-[43px] capitalize text-white">
+                        Take advantage of your opportunity to earn money by leasing your land. According to our analysis, your property in
+                        municipality is not suitable for renewable energy, but is particularly suitable for ecological improvement measures.
+                        Specialized biodiversity companies are interested in leasing your property long term and implementing ecological
+                        improvement measures on it.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- price box  -->
+        <section class="container px-5 xl:px-0">
+            <div class="flex flex-col xl:flex-row flex-wrap gap-5 lg:gap-[34px] justify-center text-center">
+                <!-- single item  -->
+                <div class="w-full xl:w-[48%] rounded-[30px] border border-[#D8E5EB] shadow-userboxshadow p-5 lg:p-[50px]">
+                    <h3 class="text-black-1 text-2xl font-semibold capitalize">Benefits for landowners</h3>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-5 lg:gap-8 mt-10">
+                        <div class="w-[308px] h-[280px] flex items-center justify-center border border-[#D8E5EB] flex-col rounded-[30px] px-5">
+                            <h3 class="text-green-1 text-4xl font-bold">15.700 €</h3>
+                            <p class="text-black-2 font-opensans text-lg mt-5">Possible annual lease for
+                            land owners</p>
+                        </div>
+                        <div class="w-[308px] h-[280px] flex items-center justify-center border border-[#D8E5EB] flex-col rounded-[30px] px-5">
+                            <h3 class="text-green-1 text-4xl font-bold">392.500 €</h3>
+                            <p class="text-black-2 font-opensans text-lg mt-5">Total income over a 25 year contract term</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="w-full xl:w-[48%] rounded-[30px] border border-[#D8E5EB] shadow-userboxshadow p-5 lg:p-[50px]">
+                    <h3 class="text-black-1 text-2xl font-semibold capitalize">Benefits for the community</h3>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-5 lg:gap-8 mt-10">
+                        <div class="w-[308px] h-[280px] flex items-center justify-center border border-[#D8E5EB] flex-col rounded-[30px] px-5">
+                            <h3 class="text-green-1 text-4xl font-bold">10.000 €</h3>
+                            <p class="text-black-2 font-opensans text-lg mt-5">Financial participation for the
+                            municipality according to §6 EEG per year</p>
+                        </div>
+                        <div class="w-[308px] h-[280px] flex items-center justify-center border border-[#D8E5EB] flex-col rounded-[30px] px-5">
+                            <h3 class="text-green-1 text-4xl font-bold">250.000 €</h3>
+                            <p class="text-black-2 font-opensans text-lg mt-5">Total income for the municipality after 25 years</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="w-full xl:w-[1088px] rounded-[30px] border border-[#D8E5EB] shadow-userboxshadow p-5 lg:p-[50px]">
+                    <h3 class="text-black-1 text-2xl font-semibold capitalize">Benefits for energy self sufficiency and climate</h3>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-5 lg:gap-8 mt-10">
+                        <div class="w-[308px] h-[280px] flex items-center justify-center border border-[#D8E5EB] flex-col rounded-[30px] px-5">
+                            <h3 class="text-green-1 text-4xl font-bold">276</h3>
+                            <p class="text-black-2 font-opensans text-lg mt-5">Households supplied with regional green electricity</p>
+                        </div>
+                        <div class="w-[308px] h-[280px] flex items-center justify-center border border-[#D8E5EB] flex-col rounded-[30px] px-5">
+                            <h3 class="text-green-1 text-4xl font-bold">200 kg</h3>
+                            <p class="text-black-2 font-opensans text-lg mt-5">CO2 savings per <br>
+                            year</p>
+                        </div>
+                        <div class="w-[308px] h-[280px] flex items-center justify-center border border-[#D8E5EB] flex-col rounded-[30px] px-5">
+                            <h3 class="text-green-1 text-4xl font-bold">5.000 kg</h3>
+                            <p class="text-black-2 font-opensans text-lg mt-5">CO2 savings after <br>
+                            25 years</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <!-- area table  -->
+        <section class="container px-5 xl:px-0 mt-10 lg:mt-[150px]">
+            <div class="bg-[#F4F8FA] p-5 lg:p-9 xl:p-[60px] rounded-[30px] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-9">
+                <!-- single wrapper  -->
+                <div class="bg-white border border-[#E7F2F8] rounded-[30px] p-5 lg:p-10">
+                    <!-- upper part  -->
+                    <div class="flex items-center gap-3 lg:gap-5 xl:gap-[30px]">
+                        <div class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                            <img src="./img/location.png" class="w-14" alt="Location">
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <h3 class="text-2xl text-gray-3 font-semibold capitalize">area details and location</h3>
+                            <p class="font-opensans text-lg text-black-2">Summary of the property being inspected.</p>
+                        </div>
+                    </div>
+                    <!-- lower part  -->
+                     <div class="border-t border-[#E4EDF0] pt-[22px] space-y-[30px] mt-14 capitalize text-black-2 font-opensans text-base font-semibold lg:text-xl">
+                        <!-- single item  -->
+                        <div class="flex justify-between">
+                            <span class="block w-[65%]">use of the parcel of land</span>
+                            <span class="block w-[35%]">agriculture</span>
+                        </div>
+                        <!-- single item  -->
+                        <div class="flex justify-between">
+                            <span class="block w-[65%]">Federal State</span>
+                            <span class="block w-[35%]">123m</span>
+                        </div>
+                        <!-- single item  -->
+                        <div class="flex justify-between">
+                            <span class="block w-[65%]">district</span>
+                            <span class="block w-[35%]">12</span>
+                        </div>
+                        <!-- single item  -->
+                        <div class="flex justify-between">
+                            <span class="block w-[65%]">Community</span>
+                            <span class="block w-[35%]">and</span>
+                        </div>
+                        <!-- single item  -->
+                        <div class="flex justify-between">
+                            <span class="block w-[65%]">district</span>
+                            <span class="block w-[35%]">378</span>
+                        </div>
+                        <!-- single item  -->
+                        <div class="flex justify-between">
+                            <span class="block w-[65%]">Hallway</span>
+                            <span class="block w-[35%]">234</span>
+                        </div>
+                        <!-- single item  -->
+                        <div class="flex justify-between">
+                            <span class="block w-[65%]">parcel of land</span>
+                            <span class="block w-[35%]">got up</span>
+                        </div>
+                        <!-- single item  -->
+                        <div class="flex justify-between">
+                            <span class="block w-[65%]">distance to residential area</span>
+                            <span class="block w-[35%]">7890</span>
+                        </div>
+                       
+                     </div>
+                </div>
+                <!-- single wrapper  -->
+                <div class="bg-white border border-[#E7F2F8] rounded-[30px] p-5 lg:p-10">
+                    <!-- upper part  -->
+                    <div class="flex items-center gap-3 lg:gap-5 xl:gap-[30px]">
+                        <div class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                            <img src="./img/earnmoney.svg" class="w-14" alt="Location">
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <h3 class="text-2xl text-gray-3 font-semibold capitalize">Earn money through ecological improvement</h3>
+                           
+                        </div>
+                    </div>
+                    <!-- lower part  -->
+                     <div class="border-t border-[#E4EDF0] pt-[22px] space-y-[30px] mt-14 capitalize text-black-2 font-opensans text-base font-semibold lg:text-xl">
+                        <p>The Federal Government has set itself the goal of halting the decline in plant and animal biodiversity to counteract.</p>
+                        <p>The area is particularly suitable for ecological improvement measures. We will help you implement these measures and
+                        lease your area profitably. Register for free on our platform to receive further information and free leasing offers.</p>
+                       
+                     </div>
+                </div>
+                <!-- single wrapper  -->
+                <div class="bg-white border border-[#E7F2F8] rounded-[30px] p-5 lg:p-10">
+                    <!-- upper part  -->
+                    <div class="flex items-center gap-3 lg:gap-5 xl:gap-[30px]">
+                        <div class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                            <img src="./img/soil.png" class="w-14" alt="Location">
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <h3 class="text-2xl text-gray-3 font-semibold capitalize">soil quality and topography</h3>
+                            <p class="font-opensans text-lg text-black-2">The property is potentially well suited for technology due to its soil characteristics and topography.</p>
+                        </div>
+                    </div>
+                    <!-- lower part  -->
+                     <div class="border-t border-[#E4EDF0] pt-[22px] space-y-[30px] mt-14 capitalize text-black-2 font-opensans text-base font-semibold lg:text-xl">
+                       <p>soil type</p>
+                       <p>soil type of the topsoil</p>
+                       <p>arable and grassland number</p>
+                       <p>groundwater level</p>
+                       <p>Nitratbelastung</p>
+                       <p>Proportion of the area with north-facing slope > 6°</p>
+                       <p>Proportion of the area with west slope > 6°</p>
+                       <p>Proportion of the area with slope > 20°</p>
+                       
+                     </div>
+                </div>
+                <!-- single wrapper  -->
+                <div class="bg-white border border-[#E7F2F8] rounded-[30px] p-5 lg:p-10">
+                    <!-- upper part  -->
+                    <div class="flex items-center gap-3 lg:gap-5 xl:gap-[30px]">
+                        <div class="w-[110px] h-[110px] bg-[#F4F8FA] rounded-[50%] flex items-center justify-center">
+                            <img src="./img/nature.svg" class="w-14" alt="Location">
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <h3 class="text-2xl text-gray-3 font-semibold capitalize">nature conservation and environmental protection
+                            </h3>
+                            <p class="font-opensans text-lg text-black-2">According to the analysis, the property is not located, or
+                                only partially located, in a nature and environmental
+                                protection area, which restricts the implementation of solar energy.</p>
+                        </div>
+                    </div>
+                    <!-- lower part  -->
+                    <div
+                        class="border-t border-[#E4EDF0] pt-[22px] space-y-[30px] mt-14 capitalize text-black-2 font-opensans text-base font-semibold lg:text-xl">
+                        <p>nature reserve ($23 Bnatschg)</p>
+                        <p>National Park ($23 Bnatschg)</p>
+                        <p>SPA bird sanctuary ($23 Bnatschg)</p>
+                        <p>RAMSAR wetland ($23 Bnatschg)</p>
+                        <p>Drinking water protection area</p>
+                        <p>Mineral spring protection area</p>
+                        <p>Flood risk area HQ100</p>
+                        <p>Flood risk area HQ Extrem</p>
+                
+                    </div>
+                </div>
+               
+               
+            </div>
+        </section>
+        <section class="container px-5 xl:px-0 my-10 lg:my-20">
+            <div class="bg-[#EAF5F5] rounded-[30px] mt-[70px]">
+                <p class="text-center font-semibold text-[22px] max-w-[990px] mx-auto py-[43px] capitalize text-black-2">
+                Your property in municipality is ideal for ecological improvement measures. Take advantage of your opportunity to earn
+                money and help federal state and Germany to promote biodiversity and nature conservation.
+                </p>
+            </div>
+        </section>
+        <!-- cta & btn  -->
+        <section class="mb-[150px] max-w-[1026px] mx-auto px-5 md:px-0">
+            
+            <div class="flex items-center justify-between gap-[22px] text-center">
+                <a href="#"
+                    class="text-green-2 hover:text-white text-lg lg:text-3xl font-semibold flex-1 py-3 lg:py-[28px] bg-transparent hover:bg-black-1 rounded-lg lg:rounded-[20px] inline-block border border-green-2 capitalize">View detailed report</a>
+                <a href="#"
+                    class="text-white text-lg lg:text-3xl font-semibold flex-1 py-3 lg:py-[28px] bg-green-2 hover:bg-black-1 rounded-lg lg:rounded-[20px] inline-block border border-green-2 capitalize">Request a free quote</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer start here  -->
+    <footer class="bg-green-1 rounded-t-[30px] font-opensans text-white">
+        <div class="container px-5 xl:px-0">
+            <div
+                class="py-10 lg:py-[111px] flex justify-between flex-col lg:flex-row gap-8 border-b border-b-[#2C857F]">
+                <div class="w-full lg:w-1/2">
+                    <img src="./img/footerLogo.png" class="w-[300px]" alt="Footer-Logo">
+                </div>
+                <div
+                    class="w-full lg:w-1/2 flex justify-between flex-col lg:flex-row gap-3 text-lg xl:text-[22px] font-semibold">
+                    <div class="w-full lg:w-[195px] xl:w-[234px]">
+                        <ul class="space-y-3 lg:space-y-[70px] ">
+                            <li><a href="#" class="hover:text-black-1">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-black-1">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-[212px] xl:w-[300px]">
+                        <ul class="space-y-3 lg:space-y-[70px] ">
+                            <li><a href="maito:info@agrarioenergy.com" class="flex items-center gap-2 xl:gap-3">
+                                    <span><img src="./img/email.svg" class="w-6" alt="email"></span>
+                                    <span>info@agrarioenergy.com</span>
+                                </a></li>
+                            <li><a href="tel:+49 (0) 157 58516778" class="flex items-center gap-2 xl:gap-3">
+                                    <span><img src="./img/call.svg" class="w-6" alt="Phone"></span>
+                                    <span>+49 (0) 157 58516778</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 lg:py-[30px] flex justify-between flex-col-reverse lg:flex-row gap-5">
+                <div class="flex-1">
+                    <p class="text-base lg:text-xl font-light">© 2024 Agrario Energy. All rights reserved.</p>
+                </div>
+                <div class="flex-1">
+                    <ul class="flex items-center justify-start lg:justify-end gap-[10px]">
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/instagram.svg" class="w-5" alt="Instragram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/twitter.svg" class="w-5" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/linkedin.svg" class="w-5" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/facebook.svg" class="w-5" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
